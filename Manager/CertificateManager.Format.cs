@@ -2,7 +2,7 @@
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace CertificateManager
+namespace Manager
 {
     public static partial class CertificateManager
     {

@@ -2,7 +2,7 @@
 using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
 
-namespace CertificateManager
+namespace Manager
 {
     public static partial class CertificateManager
     {
