@@ -35,7 +35,7 @@ namespace Manager
                 DateTimeOffset.Now.AddYears(1),
                 new List<X509Extension>()
                 {
-                    new X509BasicConstraintsExtension(true, false, 0, true),
+                    new X509BasicConstraintsExtension(false, false, 0, true),
                     new X509KeyUsageExtension(X509KeyUsageFlags.DataEncipherment | X509KeyUsageFlags.NonRepudiation, false)
                 }
             );
