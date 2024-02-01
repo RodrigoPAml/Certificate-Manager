@@ -16,7 +16,7 @@ In the case of SSL/TLS, this primarily involves authenticating the identity of w
 The digital certificate is issued by a trusted Certificate Authority (CA), which verifies the legitimacy of the server's identity.
 Usually the CA Certificate is already pre installed in your computer or broswer.
 Since the CA Certificate is already safe in your computer or transported in a safe way to your computer, all the child certificates created
-are signed by CA (RSA) and can be verified using the CA certificate.
+are signed by the CA (RSA) and can be verified using the CA certificate.
 
 * Encryption with Key Exchange:
 When a client connects to a server secured with SSL/TLS, the server presents its digital certificate to the client.
