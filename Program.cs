@@ -36,7 +36,7 @@ namespace Manager
                 new List<X509Extension>()
                 {
                     new X509BasicConstraintsExtension(true, false, 0, true),
-                    new X509KeyUsageExtension(X509KeyUsageFlags.KeyCertSign | X509KeyUsageFlags.CrlSign, false)
+                    new X509KeyUsageExtension(X509KeyUsageFlags.DataEncipherment | X509KeyUsageFlags.NonRepudiation, false)
                 }
             );
 
