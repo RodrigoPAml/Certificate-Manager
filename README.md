@@ -6,6 +6,8 @@ Digital certificates play a crucial role in establishing trust and secure commun
 
 Whether you're securing web applications, implementing secure email communication, or ensuring the integrity of software updates.
 
+This repository do not implement anything related to CRL (Certificate revogation lists)
+
 # SSL Context
 
 Digital certificates play a crucial role in ensuring secure communication over the internet, particularly in the context of SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols. 
