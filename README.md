@@ -224,3 +224,27 @@ Wbqhr/9N0ZZdhyOHyu8NTlWfvRRoJJJNlM9VlQPYjfZ+n9/WsAzu2XfCRzvXgAtmdrvlbK1M6PSE
 rGC12Ays2Mkz+siA0vW3bxOwBPFbaboXEWTPTMbcs4AqmWOORnszF01zvPHk62Suv+hz7Q==
 -----END PRIVATE KEY-----
 ```
+
+# Certificate Revocation Lists (CRLs)
+
+CRLs are no implemented in this repository, but are documented here.
+
+## What is a CRL?
+
+A Certificate Revocation List (CRL) is a list published by a Certificate Authority (CA) that contains information about certificates that have been revoked before their scheduled expiration date. Revocation might occur due to various reasons such as the certificate holder's private key being compromised, changes in the certificate holder’s status, or other security concerns.
+
+## How Does a CRL Work?
+
+### **Creation and Publication**
+
+- **Generation**: The CA generates a CRL at regular intervals or in response to certificate revocation requests. This CRL includes details such as serial numbers of the revoked certificates, revocation dates, and possibly reasons for revocation.
+  
+- **Distribution**: The CRL is then published and made accessible through a publicly available repository. This can be done via OCSP (Online Certificate Status Protocol), HTTP (CRL Distribution Points), directory services such as LDAP and so on.
+
+### **Checking Certificates**
+
+- **Validation**: When a certificate is presented (for example, during a secure transaction or communication), the relying party (e.g., a web browser or server) must verify that the certificate has not been revoked.
+  
+- **CRL Lookup**: The relying party checks the CRL to see if the certificate’s serial number is included in the list. If the serial number is found in the CRL, the certificate is considered revoked and should not be trusted.
+
+
